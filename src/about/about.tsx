@@ -1,10 +1,10 @@
 import * as React from "react";
 import "./about.scss";
+import {Experience} from './components/experience'
 
 export default class About extends React.Component {
   render() {
     return <div>
-        <h4>About me</h4>
         <div>
           <h5>Summarry information</h5>
           <p>Hi, I'm Andrew Shchetkin. I'm Web developer. 
@@ -47,16 +47,17 @@ export default class About extends React.Component {
           </ul>
         </div>
         <div>
-          <h5>Experiense</h5>
+          <h5>Experience</h5>
           <ul>
-            <li className="experianseBlock"><b>Web Developer</b><br/>
-            GMCS<br/>
-            <p className="date">May 2020 - Present<br/></p>
-            </li>
-            <li className="experianseBlock"><b>Process simulation engineer</b><br/>
-            Infrastractura TK company<br/>
-            <p className="date">Dec 2014 - May 2020<br/></p>
-            </li>
+            <Experience jobTitle={'Web Developer'} 
+              company={"GMCS"} 
+              startDate={new Date(2020, 4)} 
+              description={''}/>
+            <Experience jobTitle={'Process simulation engineer'} 
+              company={"Infrastractura TK company"} 
+              startDate={new Date(2020, 4)}
+              endDate={new Date(2014, 4)}
+              description={''} />
           </ul>
         </div>
         <div>
