@@ -25,7 +25,7 @@ export const Experience = ({
     <div><li className="experianceBlock"><b>{jobTitle}</b><br/>
         {company}<br/>
         <p className="date">{startDate.toLocaleString('en', { month: 'long' })} {startDate.getFullYear()} -
-            {endDate? ` ${endDate.getMonth()} ${endDate.getFullYear()}` : ' Present'}<br/></p>
+            {endDate? ` ${endDate.toLocaleString('en', { month: 'long' })} ${endDate.getFullYear()}` : ' Present'}<br/></p>
         <p>{description}</p>
     </li>
     </div>;

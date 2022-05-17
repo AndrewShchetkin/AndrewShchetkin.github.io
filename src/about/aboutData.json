@@ -1,0 +1,50 @@
+{
+    "skills":[
+        {
+            "subject": "Programming languages",
+            "skills": [
+                "C#",
+                "JavaScript/TypeScript",
+                "SQL/TSQL"
+            ]
+        },{
+            "subject": "Backend",
+            "skills": [
+                "Asp.Net",
+                "Node.js, Next.js"
+            ]
+        },{
+            "subject": "Frontend",
+            "skills": [
+                "CSS, HTML",
+                "Reactjs",
+                "Webpack",
+                "Babel",
+                "JQuery"
+            ]
+        },{
+            "subject": "MS Dynamics 365",
+            "skills": [
+                "Plugins",
+                "Code Activity",
+                "Unit Tests"
+            ]
+        }
+    ],
+    "experience":[
+        {
+            "title":"Web Developer",
+            "company": "GMCS",
+            "startDate": "2020 May",
+            "endDate": "",
+            "description": ""
+        },{
+            "title":"Process simulation engineer",
+            "company": "Infrastractura TK company",
+            "startDate": "2014 December",
+            "endDate": "2020 May",
+            "description": ""
+        }
+    ],
+    "education":[]
+}
