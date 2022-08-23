@@ -28,12 +28,12 @@ export default class About extends React.Component {
       <div>
         <h5>Experience</h5>
         <ul>
-          {aboutData.experience.map((j: { title: string; company: string; startDate: Date; endDate: Date | undefined; description: string | undefined; }) => 
+          {aboutData.experience.map((j: { title: string; company: string; startDate: Date; endDate: Date | undefined; description: string | undefined; }) =>
             <Experience jobTitle={j.title}
-            company={j.company}
-            startDate={new Date(j.startDate)}
-            endDate={j.endDate ? new Date(j.endDate) : undefined}
-            description={j.description} />
+              company={j.company}
+              startDate={new Date(j.startDate)}
+              endDate={j.endDate ? new Date(j.endDate) : undefined}
+              description={j.description} />
           )}
 
         </ul>

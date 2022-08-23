@@ -12,6 +12,7 @@
         "jsx": "react",
         "resolveJsonModule": true,
         "esModuleInterop": true,
+        "useDefineForClassFields": true,
     },
     "include": [
         "./src/**/*"

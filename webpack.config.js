@@ -2,9 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
+  mode: 'development',
   entry: [
     'react-hot-loader/patch',
-    './src/index.tsx'
+    './src/index.js'
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
