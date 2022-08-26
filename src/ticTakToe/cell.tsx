@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import React, { ReactNode } from "react";
 import { ICell } from "./@types/game";
 import { CellState } from "./cellStateEnum";
-import gameCore from './gameCore';
+import gameCore from './TicTakToeEngine';
 
 const Cell = observer((props:ICell) =>{
 
@@ -24,7 +24,7 @@ const Cell = observer((props:ICell) =>{
     }
 
     return (
-        <div className="cell" onClick={() => gameCore.userStep(props.line, props.cellPosition)}>
+        <div className="cell" onClick={() => gameCore.userStep(props.id)}>
             {res}
         </div>);
 });

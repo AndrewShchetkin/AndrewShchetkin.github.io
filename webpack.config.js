@@ -4,7 +4,6 @@ const path = require('path');
 const config = {
   mode: 'development',
   entry: [
-    'react-hot-loader/patch',
     './src/index.js'
   ],
   output: {
@@ -34,7 +33,7 @@ const config = {
           "sass-loader",
         ],
       },
-    ]
+    ],
   },
   devServer: {
     'static': {
@@ -47,10 +46,8 @@ const config = {
       '.ts',
       '.js'
     ],
-    alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
-  }
+  },
+  
 };
 
 module.exports = config;
